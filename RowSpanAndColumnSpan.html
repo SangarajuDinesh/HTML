@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Table Spans
+        </title>
+    </head>
+    <body>
+        <h1>Table with ColSpan</h1>
+        <style>
+            .name1
+            {
+                color: blue;
+            }
+            .age1
+            {
+                color: blue;
+            }
+            .marks1
+            {
+                color: blue;
+            }
+        </style>
+        <table border="2">
+            <tr>
+                <th colspan="3">Student Details</th>
+            </tr>
+            <tr>
+                <th class="name1">Name</th>
+                <th class="age1">Age</th>
+                <th class="marks1">Marks</th>
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td>22</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Ankita</td>
+                <td>19</td>
+                <td>99</td>
+            </tr>
+
+        </table>
+        <style>
+            .name1
+            {
+                color: blue;
+            }
+            .age1
+            {
+                color: blue;
+            }
+            .marks1
+            {
+                color: blue;
+            }
+        </style>
+        <h1>Table with RowSpan</h1>
+        <table border="2">
+            <tr>
+                <th rowspan="4">Student Details</th>
+            </tr>
+            <tr>
+                <th class="name1">Name</th>
+                <td>Ankit</td>
+                <td>Ankita</td>
+            </tr>
+            <tr>
+                <th class="age1">Age</th>
+                <td>22</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <th class="marks1">Marks</th>
+                <td>35</td>
+                <td>99</td>
+            </tr>
+        </table>
+    </body>
+</html>

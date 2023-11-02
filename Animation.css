@@ -1,0 +1,42 @@
+p{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    animation: Animation-1 5s;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top: 2px solid rgb(255, 94, 0);
+    border-bottom: 2px solid green ;
+    border-left: 2px dotted blue;
+    border-right: 2px dashed blue;
+
+}
+@keyframes Animation-1{
+    0%{
+        background-color: blue;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: chartreuse;
+        top: 0px;
+        left: 300px;
+    }
+    50%{
+        background-color: brown;
+        left: 300px;
+        top: 300px;
+    }
+    75%
+    {
+        background-color: cyan;
+        left: 0;
+        top: 300px;
+    }
+    100%{
+        background-color: tomato;
+        left: 0;
+        top: 0;
+    }
+}

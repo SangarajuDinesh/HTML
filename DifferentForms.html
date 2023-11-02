@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Different forms
+        </title>
+    </head>
+    <body>
+        <center><h1>Enter your Data</h1></center>
+        <hr>
+        <table border="0">
+            <tr>
+                <td><label> Name :</label></td>
+                <td><input type="text" placeholder="Full_name" pattern="[A-Z][a-z]*"></td>
+            </tr>
+            <tr>
+                <td><label>Password : </label></td>
+                <td><input type="password" pattern="[A-Z][a-z]*[0-9]*"></td>
+            </tr>
+            <tr>
+                <td><label>DOB : </label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label>Age : </label></td>
+                <td><input type="number" min="16" max="25"></td>
+            </tr>
+            <tr>
+                <td><label>Year of Passing : </label></td>
+                <td><input type="number" min="2020" max="2025"></td>
+            </tr>
+            <tr>
+                <td><label>Color : </label></td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td><label>Birth Date & Time :</label></td>
+                <td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td><label>Range : </label></td>
+                <td><input type="range"></td>
+            </tr>
+            <tr>
+                <td><label>Qualification : </label></td>
+                <td><input type="text" placeholder="Enter your Qualification"></td>
+            </tr>
+            <tr>
+                <td><label>Gender : </label></td>
+                <td>
+                    <input type="radio">male
+                    <input type="radio">female
+                </td>
+            </tr>
+            <tr>
+                <td><label>Nationality : </label></td>
+                <td>
+                    <select name="Nationality">
+                        <option value="USA">United States</option>
+                        <option value="India">India</option>
+                        <option value="Nepal">Nepal</option>
+                    </select>
+                 </td>
+            </tr>
+            <tr>
+                <td><label>Upload file - </label></td>
+                <td><input type="file" name="Resume"></td>
+            </tr>
+        </table>
+        <button>Submit</button>
+    </body>
+</html>

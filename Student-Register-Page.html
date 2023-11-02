@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registation Form</title>
+</head>
+<link rel="stylesheet" href="Student-register.css" type="text/css">
+<body>
+    <div class="register">
+        <h2>Student Registration Form</h2>
+        <form action="Student-Register-Page.jsp" method="post">
+        <table>
+            <tr>
+                <td><label for="Name">Name</label></td>
+                <td><input id="id1" type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="University ID">University ID</label></td>
+                <td><input id="id2" type="text" required pattern="[1-9][A-Z]*[a-Z]*"></tr></td>
+            </tr>
+            <tr>
+                <td><label for="Barnch">Branch</label></td>
+                <td><select id="id3" name="Branch" required>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="Civil">CIVIL</option>
+                    <option value="EEE">EEE</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="Passout-year">Year of Passout</label></td>
+                <td><input id="id4" type="number" min="2020" max="2024" required></td>
+            </tr>
+            <tr>
+                <td><label for="CGPA">CGPA</label></td>
+                <td><input id="id5" type="number" required></td>
+            </tr>
+            <tr>
+                <td><label for="DOB">Date of Birth</label></td>
+                <td><input id="id6" type="date" required min="1997" max="2003"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile</label></td>
+                <td><input id="id7" type="text" pattern="[0-9]*" re></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input id="id8" type="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td>
+                <td><input id="id9" type="radio">Male</td>
+                <td><input id="id9" type="radio">Female</td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address</label></td>
+                <td><input id="id10" type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="Mode of classes">Mode of classes</label></td>
+                <td><input id="id11" type="radio">Online</td>
+                <td><input id="id12" type="radio">Offline</td>
+            </tr>
+        </table>
+            <button id="btn1" type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="div1" style="background-color: aquamarine; text-align: center;">
+
+    </div>
+    <script>
+        const id1=document.getElementById('id1')
+        const id2=document.getElementById('id2')
+        const id3=document.getElementById('id3')
+        const id4=document.getElementById('id4')
+        const id5=document.getElementById('id5')
+        const id6=document.getElementById('id6')
+        const id7=document.getElementById('id7')
+        const id8=document.getElementById('id8')
+        const id9=document.getElementById('id9')
+        const id10=document.getElementById('id10')
+        const id11=document.getElementById('id11')
+        const id12=document.getElementById('id12')
+        const id13=document.getElementById('div1')
+        function fun1()
+        {
+            div1.innerHTML=id1.value,id2.value,id3.value,id4.value,id5.value,id6.value,id6.value,id7.value,id8.value,id9.value,id10.value,id11.value,id12.value,id13.value;
+        }
+        btn1.addEventListener('click',fun1);
+    </script>
+</body>
+</html>
